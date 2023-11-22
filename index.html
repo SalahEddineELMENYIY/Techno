@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Importing logo for the tab -->
-    <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
-    <!-- Linking normalize file -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <!-- Linking css file -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Importing swiperjs css files -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <title>Techno</title>
-  </head>
-  <body>
-    <!-- Mehdi S -->
-    <header>
-      <nav></nav>
-    </header>
-    <!-- Mehdi E -->
-    <main>
-      <!-- Salah-Eddine S -->
-      <section class="hero-section"></section>
-      <!-- Salah-Eddine E -->
-      <!-- Badr-Eddine S -->
-      <section class="intoduction"></section>
-      <!-- Badr-Eddine E -->
-      <!-- Abde llah S -->
-      <section class="team-members"></section>
-      <!-- Abde llah E -->
-      <!-- Zakaria S -->
-      <section  class="customers-reviews"></section>
-      <!-- Zakaria E -->
-      <!-- Yassine S -->
-      <section  class="plans"></section>
-      <!-- Yassine E -->
-    </main>
-    <!-- Mehdi S -->
-    <footer></footer>
-    <!-- Mehdi E -->
-    <!-- Linking js files -->
-    <script src="js/main.js"></script>
-    <!-- Importing swiperjs js files -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize the swiper component -->
-    <script>
-      var swiper = new Swiper('.swiper', {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Importing logo for the tab -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+  <!-- Linking normalize file -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Linking css file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Importing swiperjs css files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Techno</title>
+</head>
+
+<body>
+  <!-- Mehdi S -->
+  <header class="header">
+    <div class="navbar-area sticky">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="/">
+                Logo
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse  " style="display: none;">
+                <div class="ms-auto">
+                  <ul id="nav" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#team-members">Team Members</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#customers-reviews">Customers Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#plans">Plans</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mehdi E -->
+  <main>
+    <!-- Salah-Eddine S -->
+    <section id="home" class="hero-section">
+
+    </section>
+    <!-- Salah-Eddine E -->
+    <!-- Badr-Eddine S -->
+    <section id="introduction" class="intoduction"></section>
+    <!-- Badr-Eddine E -->
+    <!-- Abde llah S -->
+    <section id="team-members" class="team-members"></section>
+    <!-- Abde llah E -->
+    <!-- Zakaria S -->
+    <section id="customers-reviews" class="customers-reviews"></section>
+    <!-- Zakaria E -->
+    <!-- Yassine S -->
+    <section id="plans" class="plans"></section>
+    <!-- Yassine E -->
+  </main>
+  <!-- Mehdi S -->
+  <footer></footer>
+  <a href="#" class="scroll-top btn-hover" style="display: flex;">
+    &uarr;
+  </a>
+  <!-- Mehdi E -->
+  <!-- Linking js files -->
+  <script src="./js/script.js"></script>
+  <!-- Importing swiperjs js files -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize the swiper component -->
+  <script>
+    var swiper = new Swiper('.swiper', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     });
-    </script>
   </script>
-  </body>
+  </script>
+</body>
+
 </html>
