@@ -65,7 +65,34 @@
       <section class="team-members"></section>
       <!-- Abde llah E -->
       <!-- Zakaria S -->
-      <section  class="customers-reviews"></section>
+      <section  class="customers-reviews">   
+         
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"
+   
+    
+    > <img src="assets/images/zakaria_telha_parts/3.png" alt="Image 1"></div>
+    <div class="swiper-slide"
+    
+    
+     ><img src="assets/images/zakaria_telha_parts/4.png" alt="Image 1"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+      </section>
       <!-- Zakaria E -->
       <!-- Yassine S -->
       <section  class="plans"></section>
@@ -81,11 +108,26 @@
     <!-- Initialize the swiper component -->
     <script>
       var swiper = new Swiper('.swiper', {
+
+       
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+ 
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+
+      autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+
     });
+
+   
     </script>
   </script>
   </body>
